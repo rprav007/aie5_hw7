@@ -26,3 +26,10 @@ Modifying the chunk size in a retrieval-augmented generation (RAG) application c
 
 Hence modifying chunk size requires finding a balance that provides enough context without sacrificing focus or exceeding computational limits. Experimentation is key to finding the optimal chunk size.
 
+Question #4 - Why would modifying our embedding model modify the performance of our application?
+
+The embedding model in a retrieval-augmented generation (RAG) application significantly impacts performance because it underpins the retrieval process.
+* Changing the model affects semantic representation, impacting similarity search results.
+* Relevance matching is also influenced, as the model's understanding of language affects its ability to match queries to relevant chunks.
+* Performance characteristics, like dimensionality and computational cost, and data compatibility, especially the training data and domain specificity, are also key considerations when changing the embedding model.
+
