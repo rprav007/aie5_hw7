@@ -33,3 +33,9 @@ The embedding model in a retrieval-augmented generation (RAG) application signif
 * Relevance matching is also influenced, as the model's understanding of language affects its ability to match queries to relevant chunks.
 * Performance characteristics, like dimensionality and computational cost, and data compatibility, especially the training data and domain specificity, are also key considerations when changing the embedding model.
 
+Question #5 - Explain why you believe certain metrics changed in certain ways?
+
+There are differences in the performance of the SDG dataset. We changed the chunk size, the RAG prompt and the embeddings model kind from small to large which supports higher number of dimensions in the vector space. Here are some of the differences and the reasons
+* More answers and lesser number of "I dont know outputs"
+* Increase in Correctness, Dopeness and Helpfulness - Rag prompt influenced dopeness, chunck size increased correctness as much of the context was preserved in chunks and the dimensions increase because we used a larger embeddings model increased helpfulness quotient.
+* Increase in latency - Deeper search were performed for some of the abstract multi-hop queries. It increased the latency but also provided more favorable results.
